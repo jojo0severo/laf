@@ -1,0 +1,95 @@
+random:
+- random
+- uuid
+
+conditional:
+- ifthenelse
+- and
+- or
+- xor
+- not
+
+comparison:
+- is_bigger
+- is_smaller
+- is_equal
+- is_equal_ignore_case
+- has any
+- has all
+- has N
+- start with
+- end with
+- has fraction
+
+cast:
+- as_date
+- as_integer
+- as_decimal
+- to_date (can specify format)
+- to_decimal (can specify precision)
+
+validação:
+- is_convertible_to_date
+- is_convertible_to_integer
+- is_convertible_to_decimal
+- is_convertible_to_string
+
+encrypt/decrypt:
+- aes
+- des
+- rsa
+- blowfish
+- twofish
+
+string:
+- split
+- concat
+- chars
+- char index
+- length
+- lower
+- upper
+- if regex match
+- list of matched regexes
+- first match of regex
+- title
+- trim/ltrim/rtrim
+- pad/lpad/rpad
+- replace
+- substring
+- repeat
+- revert
+
+array:
+- first
+- last
+- at index
+- range
+- size
+- drop/drop range/drop object
+- add
+- set/set index/set range
+- sort
+- index of
+- last index of
+- sublist
+- reduce
+- map
+- count value
+- count values : esse chamada iria gerar um hashmap?
+
+number:
+- abs
+- mod
+- power
+- sqrt
+- sum
+- subtract
+- multiply
+- divide
+
+decimal:
+- floor
+- ceil
+- round
+- trunc
