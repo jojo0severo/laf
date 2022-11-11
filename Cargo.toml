@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 num-traits = "0.2.15"
+rand = "0.8.5"
+uuid = { version = "1.2.1", features = ["v1", "v3", "v4", "v5", "fast-rng"] }

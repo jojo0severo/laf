@@ -1,7 +1,3 @@
-random:
-- random
-- uuid
-
 conditional:
 - ifthenelse
 - and
@@ -77,6 +73,11 @@ array:
 - map
 - count value
 - count values : esse chamada iria gerar um hashmap?
+
+random:
+- random
+- in_range
+- uuid
 
 number:
 - abs

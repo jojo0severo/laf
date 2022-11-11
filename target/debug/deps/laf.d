@@ -1,24 +1,24 @@
-D:\Projects\Rust\laf\target\debug\deps\laf.exe: src\main.rs src\functions\mod.rs src\functions\number_operations\mod.rs src\functions\number_operations\absolute.rs src\functions\number_operations\divide.rs src\functions\number_operations\floating_operations\mod.rs src\functions\number_operations\floating_operations\ceil.rs src\functions\number_operations\floating_operations\floor.rs src\functions\number_operations\floating_operations\fraction.rs src\functions\number_operations\floating_operations\round.rs src\functions\number_operations\floating_operations\square_root.rs src\functions\number_operations\floating_operations\trunc.rs src\functions\number_operations\modulus.rs src\functions\number_operations\multiply.rs src\functions\number_operations\power.rs src\functions\number_operations\subtract.rs src\functions\number_operations\sum.rs src\types\mod.rs src\types\field.rs src\types\value.rs
+D:\Projects\Rust\laf\target\debug\deps\laf.exe: src\main.rs src\functions\mod.rs src\functions\numeric_ops\mod.rs src\functions\numeric_ops\absolute.rs src\functions\numeric_ops\decimal_ops\mod.rs src\functions\numeric_ops\decimal_ops\ceil.rs src\functions\numeric_ops\decimal_ops\floor.rs src\functions\numeric_ops\decimal_ops\fraction.rs src\functions\numeric_ops\decimal_ops\round.rs src\functions\numeric_ops\decimal_ops\square_root.rs src\functions\numeric_ops\decimal_ops\trunc.rs src\functions\numeric_ops\divide.rs src\functions\numeric_ops\modulus.rs src\functions\numeric_ops\multiply.rs src\functions\numeric_ops\power.rs src\functions\numeric_ops\subtract.rs src\functions\numeric_ops\sum.rs src\types\mod.rs src\types\field.rs src\types\value.rs
 
-D:\Projects\Rust\laf\target\debug\deps\laf.d: src\main.rs src\functions\mod.rs src\functions\number_operations\mod.rs src\functions\number_operations\absolute.rs src\functions\number_operations\divide.rs src\functions\number_operations\floating_operations\mod.rs src\functions\number_operations\floating_operations\ceil.rs src\functions\number_operations\floating_operations\floor.rs src\functions\number_operations\floating_operations\fraction.rs src\functions\number_operations\floating_operations\round.rs src\functions\number_operations\floating_operations\square_root.rs src\functions\number_operations\floating_operations\trunc.rs src\functions\number_operations\modulus.rs src\functions\number_operations\multiply.rs src\functions\number_operations\power.rs src\functions\number_operations\subtract.rs src\functions\number_operations\sum.rs src\types\mod.rs src\types\field.rs src\types\value.rs
+D:\Projects\Rust\laf\target\debug\deps\laf.d: src\main.rs src\functions\mod.rs src\functions\numeric_ops\mod.rs src\functions\numeric_ops\absolute.rs src\functions\numeric_ops\decimal_ops\mod.rs src\functions\numeric_ops\decimal_ops\ceil.rs src\functions\numeric_ops\decimal_ops\floor.rs src\functions\numeric_ops\decimal_ops\fraction.rs src\functions\numeric_ops\decimal_ops\round.rs src\functions\numeric_ops\decimal_ops\square_root.rs src\functions\numeric_ops\decimal_ops\trunc.rs src\functions\numeric_ops\divide.rs src\functions\numeric_ops\modulus.rs src\functions\numeric_ops\multiply.rs src\functions\numeric_ops\power.rs src\functions\numeric_ops\subtract.rs src\functions\numeric_ops\sum.rs src\types\mod.rs src\types\field.rs src\types\value.rs
 
 src\main.rs:
 src\functions\mod.rs:
-src\functions\number_operations\mod.rs:
-src\functions\number_operations\absolute.rs:
-src\functions\number_operations\divide.rs:
-src\functions\number_operations\floating_operations\mod.rs:
-src\functions\number_operations\floating_operations\ceil.rs:
-src\functions\number_operations\floating_operations\floor.rs:
-src\functions\number_operations\floating_operations\fraction.rs:
-src\functions\number_operations\floating_operations\round.rs:
-src\functions\number_operations\floating_operations\square_root.rs:
-src\functions\number_operations\floating_operations\trunc.rs:
-src\functions\number_operations\modulus.rs:
-src\functions\number_operations\multiply.rs:
-src\functions\number_operations\power.rs:
-src\functions\number_operations\subtract.rs:
-src\functions\number_operations\sum.rs:
+src\functions\numeric_ops\mod.rs:
+src\functions\numeric_ops\absolute.rs:
+src\functions\numeric_ops\decimal_ops\mod.rs:
+src\functions\numeric_ops\decimal_ops\ceil.rs:
+src\functions\numeric_ops\decimal_ops\floor.rs:
+src\functions\numeric_ops\decimal_ops\fraction.rs:
+src\functions\numeric_ops\decimal_ops\round.rs:
+src\functions\numeric_ops\decimal_ops\square_root.rs:
+src\functions\numeric_ops\decimal_ops\trunc.rs:
+src\functions\numeric_ops\divide.rs:
+src\functions\numeric_ops\modulus.rs:
+src\functions\numeric_ops\multiply.rs:
+src\functions\numeric_ops\power.rs:
+src\functions\numeric_ops\subtract.rs:
+src\functions\numeric_ops\sum.rs:
 src\types\mod.rs:
 src\types\field.rs:
 src\types\value.rs:

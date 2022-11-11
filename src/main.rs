@@ -6,7 +6,7 @@ use std::cell::Cell;
 use crate::types::field::Field;
 
 fn main() {
-    use functions::number_operations::{
+    use functions::numeric_ops::{
         absolute::Absolute, ceil::Ceil, divide::Divide, floor::Floor, fraction::Fraction,
         modulus::Modulus, multiply::Multiply, power::Power, round::Round, square_root::SquareRoot,
         subtract::Subtract, sum::Sum, trunc::Trunc,

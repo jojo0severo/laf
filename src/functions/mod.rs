@@ -1,2 +1,4 @@
-pub mod number_operations;
-pub use number_operations::floating_operations;
+pub mod numeric_ops;
+pub mod random_ops;
+
+pub use numeric_ops::decimal_ops;
