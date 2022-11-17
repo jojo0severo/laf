@@ -1,21 +1,21 @@
 use crate::types::field::Field;
 
-pub struct EndsWith<T, U> {
+pub struct StartsWith<T, U> {
     a: T,
     b: U,
 }
 
-impl<K, T, U> EndsWith<T, U>
+impl<K, T, U> StartsWith<T, U>
 where
     T: Field<Output = Vec<K>>,
     U: Field<Output = K>,
 {
-    pub fn new(a: T, b: U) -> EndsWith<T, U> {
-        return EndsWith { a, b };
+    pub fn new(a: T, b: U) -> StartsWith<T, U> {
+        return StartsWith { a, b };
     }
 }
 
-impl<K, T, U> Field for EndsWith<T, U>
+impl<K, T, U> Field for StartsWith<T, U>
 where
     K: Ord,
     T: Field<Output = Vec<K>>,
