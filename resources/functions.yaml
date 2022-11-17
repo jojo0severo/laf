@@ -5,18 +5,6 @@ conditional:
 - xor
 - not
 
-comparison:
-- is_bigger
-- is_smaller
-- is_equal
-- is_equal_ignore_case
-- has any
-- has all
-- has N
-- start with
-- end with
-- has fraction
-
 cast:
 - as_date
 - as_integer
@@ -73,6 +61,18 @@ array:
 - map
 - count value
 - count values : esse chamada iria gerar um hashmap?
+
+comparison:
+- is_bigger
+- is_smaller
+- is_equal
+- is_equal_ignore_case
+- has any
+- has all
+- has N
+- start with
+- end with
+- has fraction
 
 random:
 - random

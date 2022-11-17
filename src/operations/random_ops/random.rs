@@ -3,7 +3,7 @@ use rand::thread_rng;
 
 use crate::types::field::Field;
 
-struct Random {}
+pub struct Random {}
 
 impl Random {
     pub fn new() -> Random {
