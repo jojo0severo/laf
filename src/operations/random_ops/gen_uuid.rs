@@ -2,7 +2,7 @@ use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 use uuid::Uuid;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub enum UUIDVersions {
     V1,

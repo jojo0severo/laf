@@ -1,6 +1,6 @@
 use std::ops::Mul;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Multiply<T, U> {
     a: T,

@@ -1,6 +1,6 @@
 use num_traits::Signed;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Absolute<T> {
     value: T,

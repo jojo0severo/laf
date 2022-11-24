@@ -7,12 +7,12 @@ conditional:
 
 cast:
 - as_date
-- as_integer
+- as_integer  
 - as_decimal
 - to_date (can specify format)
 - to_decimal (can specify precision)
 
-validação:
+validations:
 - is_convertible_to_date
 - is_convertible_to_integer
 - is_convertible_to_decimal
@@ -48,17 +48,17 @@ array:
 - first
 - last
 - at index
-- range
 - size
-- drop/drop range/drop object
+- drop/drop range/drop index
 - add
-- set/set index/set range
+- set/set range/set index
 - sort
 - index of
 - last index of
 - sublist
 - reduce
 - map
+- reverse
 - count value
 - count values : esse chamada iria gerar um hashmap?
 
@@ -67,9 +67,9 @@ comparison:
 - is_smaller
 - is_equal
 - is_equal_ignore_case
-- has any
-- has all
-- has N
+- contains any
+- contains all
+- contains
 - start with
 - end with
 - has fraction

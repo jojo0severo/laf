@@ -1,6 +1,6 @@
 use std::ops::Add;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Sum<T, U> {
     a: T,

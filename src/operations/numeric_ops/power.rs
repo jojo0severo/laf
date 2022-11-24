@@ -1,6 +1,6 @@
 use num_traits::{cast, checked_pow, CheckedMul, Num, NumCast};
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Power<T, U> {
     a: T,

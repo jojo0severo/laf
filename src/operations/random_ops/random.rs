@@ -1,7 +1,7 @@
 use rand::distributions::{Distribution, Uniform};
 use rand::thread_rng;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Random {}
 

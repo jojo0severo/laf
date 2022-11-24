@@ -25,14 +25,7 @@ macro_rules! comparable_values {
                 return self.a.get_value().$op(&self.b.get_value());
             }
         }
-    };
 
-    ($classname:ident $op:tt $var:ident $($more:ident)+) => {
-        crate::comparable_values! { $classname $op $var }
-        crate::comparable_values! { $classname $op $($more)+ }
-    };
-
-    ($classname:ident $op:tt Vec<$var:ident>) => {
         impl<T, U> Field for $classname<Vec<$var>, T, U>
         where
         T: Field<Output = Vec<$var>>,
@@ -48,8 +41,8 @@ macro_rules! comparable_values {
         }
     };
 
-    ($classname:ident $op:tt Vec<$var:ident> $(Vec<$more:ident>)+) => {
-        crate::comparable_values! { $classname $op Vec<$var> }
-        crate::comparable_values! { $classname $op $(Vec<$more>)+ }
+    ($classname:ident $op:tt $var:ident $($more:ident)+) => {
+        crate::comparable_values! { $classname $op $var }
+        crate::comparable_values! { $classname $op $($more)+ }
     };
 }

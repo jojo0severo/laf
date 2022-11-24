@@ -1,6 +1,6 @@
 use std::ops::Rem;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Modulus<T, U> {
     a: T,

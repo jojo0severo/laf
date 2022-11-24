@@ -1,6 +1,6 @@
 use std::ops::Sub;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Subtract<T, U> {
     a: T,

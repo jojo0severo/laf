@@ -1,9 +1,9 @@
-use num_traits::{cast, Num, NumCast, One};
+use num_traits::{cast, Num, NumCast};
 use rand::distributions::uniform::SampleUniform;
 use rand::distributions::{Distribution, Uniform};
 use rand::thread_rng;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct RandRange<T, U> {
     a: T,

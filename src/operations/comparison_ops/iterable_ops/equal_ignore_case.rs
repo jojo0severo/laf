@@ -1,12 +1,11 @@
-use crate::types::field::Field;
+use std::marker::PhantomData;
 
-pub struct EqualsIgnoreCase<K, T, U>
-where
-    T: Field<Output = K>,
-    U: Field<Output = K>,
-{
+use crate::types::Field;
+
+pub struct EqualsIgnoreCase<K, T, U> {
     a: T,
     b: U,
+    c: PhantomData<K>,
 }
 
 impl<T, U> EqualsIgnoreCase<String, T, U>
@@ -15,7 +14,11 @@ where
     U: Field<Output = String>,
 {
     pub fn new(a: T, b: U) -> EqualsIgnoreCase<String, T, U> {
-        return EqualsIgnoreCase { a, b };
+        return EqualsIgnoreCase {
+            a,
+            b,
+            c: PhantomData,
+        };
     }
 }
 
@@ -25,7 +28,11 @@ where
     U: Field<Output = Vec<char>>,
 {
     pub fn new(a: T, b: U) -> EqualsIgnoreCase<Vec<char>, T, U> {
-        return EqualsIgnoreCase { a, b };
+        return EqualsIgnoreCase {
+            a,
+            b,
+            c: PhantomData,
+        };
     }
 }
 

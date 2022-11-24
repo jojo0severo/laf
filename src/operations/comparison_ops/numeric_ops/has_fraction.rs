@@ -1,6 +1,6 @@
 use num_traits::{cast, real::Real};
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct HasFraction<T> {
     value: T,

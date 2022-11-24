@@ -1,6 +1,6 @@
 use num_traits::real::Real;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Ceil<T> {
     value: T,

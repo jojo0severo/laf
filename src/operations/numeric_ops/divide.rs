@@ -1,6 +1,6 @@
 use std::ops::Div;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct Divide<T, U> {
     a: T,

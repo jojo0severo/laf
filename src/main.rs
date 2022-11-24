@@ -3,11 +3,12 @@ mod types;
 
 use std::cell::Cell;
 
-use crate::types::field::Field;
+use crate::types::Field;
 
 fn main() {
-    use operations::comparison_ops::HasFraction;
-    use types::value::Value;
+    use types::Value;
+
+    use operations::array_ops::Append;
 
     let integer_cell = Cell::new(10);
     let floating_cell = Cell::new(1.6);
@@ -24,7 +25,39 @@ fn main() {
     println!("{}", b.get_value());
     println!("{}", c.get_value());
     println!("{}", d.get_value());
+    (e.get_value() as Vec<i32>)
+        .iter()
+        .for_each(|v| print!("{}, ", v));
 
-    let f = HasFraction::new(b);
-    println!("{}", f.get_value());
+    println!();
+    let potato = Append::new(e, a);
+
+    (potato.get_value() as Vec<i32>)
+        .iter()
+        .for_each(|v| print!("{}, ", v));
+    println!();
+
+    print_type(convert("i32"));
+}
+
+enum Type {
+    StringType(String),
+    I32Type(i32),
+    None,
+}
+
+fn print_type(value: Type) {
+    match value {
+        Type::StringType(_) => println!("String"),
+        Type::I32Type(_) => println!("i32"),
+        Type::None => println!("None"),
+    }
+}
+
+fn convert(value: &str) -> Type {
+    match value {
+        "string" => return Type::StringType(String::from("")),
+        "i32" => return Type::I32Type(0),
+        _ => return Type::None,
+    };
 }

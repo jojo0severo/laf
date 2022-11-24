@@ -1,4 +1,4 @@
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct EndsWith<T, U> {
     a: T,

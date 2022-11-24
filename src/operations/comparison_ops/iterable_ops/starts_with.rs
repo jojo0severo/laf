@@ -1,4 +1,4 @@
-use crate::types::field::Field;
+use crate::types::Field;
 
 pub struct StartsWith<T, U> {
     a: T,
