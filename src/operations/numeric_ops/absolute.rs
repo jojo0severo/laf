@@ -6,12 +6,12 @@ pub struct Absolute<T> {
     value: T,
 }
 
-impl<K, T> Absolute<T>
+impl<T, K> Absolute<T>
 where
     K: Signed,
     T: Field<Output = K>,
 {
-    pub fn new(value: T) -> Absolute<T> {
+    fn new(value: T) -> Absolute<T> {
         return Absolute { value };
     }
 }

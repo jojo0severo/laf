@@ -1,6 +1,6 @@
 use num_traits::PrimInt;
 
-use crate::types::{Field, SupportedTypeDefault};
+use crate::types::Field;
 
 pub struct DropRange<T, U> {
     a: T,
@@ -23,7 +23,6 @@ impl<K, H, T, U> Field for DropRange<T, U>
 where
     H: PrimInt,
     for<'a> &'a H: Into<&'a usize>,
-    K: SupportedTypeDefault<K>,
     T: Field<Output = Vec<K>>,
     U: Field<Output = Vec<H>>,
 {

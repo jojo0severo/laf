@@ -22,3 +22,4 @@ mod update_index;
 mod update_range;
 
 pub use append::Append;
+pub use last::Last;

@@ -1,7 +1,7 @@
 mod field;
-mod supported_types;
+mod type_mapping;
 mod value;
 
 pub use field::Field;
-pub use supported_types::{SupportedType, SupportedTypeDefault};
+pub use type_mapping::{convert_string, SupporttedType, Type};
 pub use value::Value;

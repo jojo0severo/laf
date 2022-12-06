@@ -1,6 +1,6 @@
 use num_traits::PrimInt;
 
-use crate::types::{Field, SupportedTypeDefault};
+use crate::types::Field;
 
 pub struct At<T, U> {
     a: T,
@@ -23,7 +23,7 @@ impl<K, H, T, U> Field for At<T, U>
 where
     H: PrimInt,
     H: Into<usize>,
-    K: SupportedTypeDefault<K>,
+    K: Default,
     T: Field<Output = Vec<K>>,
     U: Field<Output = H>,
 {
@@ -35,7 +35,7 @@ where
         if b < a.len() {
             return a.swap_remove(b);
         } else {
-            return K::default_value();
+            return K::default();
         }
     }
 }

@@ -1,4 +1,4 @@
-use crate::types::{Field, SupportedTypeDefault};
+use crate::types::Field;
 
 pub struct DropIndex<T, U> {
     a: T,
@@ -19,7 +19,6 @@ where
 impl<K, H, T, U> Field for DropIndex<T, U>
 where
     H: Into<usize>,
-    K: SupportedTypeDefault<K>,
     T: Field<Output = Vec<K>>,
     U: Field<Output = H>,
 {

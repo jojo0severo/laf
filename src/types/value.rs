@@ -13,11 +13,8 @@ impl<'a, T> Value<'a, T> {
     }
 }
 
-impl<'a, T> Field for Value<'a, Vec<T>>
-where
-    T: Clone,
-{
-    type Output = Vec<T>;
+impl<'a> Field for Value<'a, String> {
+    type Output = String;
 
     fn get_value(&self) -> Self::Output {
         let temp = self.value.take();
@@ -26,8 +23,8 @@ where
     }
 }
 
-impl<'a> Field for Value<'a, String> {
-    type Output = String;
+impl<'a> Field for Value<'a, Vec<String>> {
+    type Output = Vec<String>;
 
     fn get_value(&self) -> Self::Output {
         let temp = self.value.take();
@@ -45,6 +42,16 @@ macro_rules! copiable_types {
                 return self.value.get();
             }
         }
+
+        impl<'a> Field for Value<'a, Vec<$var>>{
+            type Output = Vec<$var>;
+
+            fn get_value(&self) -> Self::Output {
+                let temp = self.value.take();
+                self.value.set(temp.clone());
+                return temp;
+            }
+        }
     };
 
     ($var:ident $($more:ident)+) => {
@@ -53,4 +60,8 @@ macro_rules! copiable_types {
     };
 }
 
-copiable_types!(i128 i64 i32 i8 isize usize u8 u32 u64 u128 f32 f64 char bool);
+copiable_types!(
+    i128 i64 i32 i8 isize
+    usize u8 u32 u64 u128
+    f32 f64 char bool
+);

@@ -4,6 +4,7 @@ mod types;
 use std::cell::Cell;
 
 use crate::types::Field;
+use crate::types::{convert_string, Type};
 
 fn main() {
     use types::Value;
@@ -37,27 +38,13 @@ fn main() {
         .for_each(|v| print!("{}, ", v));
     println!();
 
-    print_type(convert("i32"));
-}
-
-enum Type {
-    StringType(String),
-    I32Type(i32),
-    None,
+    print_type(convert_string("i32"));
 }
 
 fn print_type(value: Type) {
     match value {
-        Type::StringType(_) => println!("String"),
-        Type::I32Type(_) => println!("i32"),
-        Type::None => println!("None"),
+        Type::String(_) => println!("String"),
+        Type::I32(_) => println!("i32"),
+        _ => println!("None"),
     }
-}
-
-fn convert(value: &str) -> Type {
-    match value {
-        "string" => return Type::StringType(String::from("")),
-        "i32" => return Type::I32Type(0),
-        _ => return Type::None,
-    };
 }
